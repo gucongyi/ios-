@@ -1,0 +1,5 @@
+http://www.applicationloader.net/blog/zh/726.html  xcode项目打包导出IPA图文介绍
+http://cdn.www.applicationloader.net/blog/zh/349.html  3秒申请iOS证书（.p12）和（.mobileprovision）、
+http://blog.csdn.net/qq_30518805/article/details/51396032   unity3D生成ipa详解-基于xcode7.3，unity5.3.4,for Mac. 
+http://blog.csdn.net/lys07962000/article/details/17917467  MAC下的SVN服务器建立
+https://appleid.apple.com/#!&page=signin 管理appid
