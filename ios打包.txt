@@ -3,3 +3,5 @@ http://cdn.www.applicationloader.net/blog/zh/349.html  3秒申请iOS证书（.p1
 http://blog.csdn.net/qq_30518805/article/details/51396032   unity3D生成ipa详解-基于xcode7.3，unity5.3.4,for Mac. 
 http://blog.csdn.net/lys07962000/article/details/17917467  MAC下的SVN服务器建立
 https://appleid.apple.com/#!&page=signin 管理appid
+http://jingyan.baidu.com/article/63f23628276e1d0209ab3d10.html 测试员如何使用TestFlight进行测试
+http://www.jianshu.com/p/27545c2d4d8b 如何使用TestFlight进行App构建版本测试
