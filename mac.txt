@@ -1,0 +1,57 @@
+1.进入文件夹
+Finder->前往->文件夹->输入/进入根目录
+2.打开多个终端
+右键终端，打开窗口
+3.给文件夹分配权限
+进入上层目录->sudo chmod -R 777 文件夹名
+4.打开mac os TightVNC
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -off -restart -agent -privs -all -allowAccessFor -allUsers
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -off -restart -agent -privs -all -allowAccessFor -allUsers -clientopts -setvncpw -vncpw myVncPassword
+5.查看某个文件权限的命令
+ls -l 要查看文件的文件名
+6.卸载Jenkins
+/Library/Application Support/Jenkins/Uninstall.command  
+7.查看附加属性
+ls -l@ 文件名
+7.删除@
+sudo xattr -d 属性名 文件名
+8.更改完Jenkins文件组和用户名后,重新设置权限
+
+$ sudo chown -R hyz /Users/Shared/Jenkins
+$ sudo chown -R hyz /var/log/jenkins
+
+#重启Jenkins
+$ sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+打开localhost:8080就能成功了
+9.
+ctrl +alt +shift+f推出tightvnc全屏。
+10.Team id
+WBHCY56HJ5
+11.钥匙串写到打包sh中，签名就不会出错了
+security set-keychain-settings -t 3600 -l ~/Library/Keychains/login.keychain-db
+security unlock-keychain -p "123456" ~/Library/Keychains/login.keychain-db
+钥匙串的用到的秘钥设置成所有app使用。
+12.
+\cp -r -a aaa/* /bbb 成功，没有提示按Y、传递了目录属性、没有略过目录。
+-r 递归处理 \cp忽略回答Y
+13.设置preferrence
+public static string AndroidSdkRoot {
+    get { return EditorPrefs.GetString("AndroidSdkRoot"); }
+    set { EditorPrefs.SetString("AndroidSdkRoot", value); }
+  }
+
+  public static string JdkRoot {
+    get { return EditorPrefs.GetString("JdkPath"); }
+    set { EditorPrefs.SetString("JdkPath", value); }
+  }
+
+  // This requires Unity 5.3 or later
+  public static string AndroidNdkRoot {
+    get { return EditorPrefs.GetString("AndroidNdkRoot"); }
+    set { EditorPrefs.SetString("AndroidNdkRoot", value); }
+  }
+}
+14.重命名
+mv oldfilename newfilename
+15.日期和字符串拼接方式
+echo 123$(date +%Y_%m_%d_%H_%M_%S)
