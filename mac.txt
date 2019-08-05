@@ -1,40 +1,40 @@
-1.½øÈëÎÄ¼ş¼Ğ
-Finder->Ç°Íù->ÎÄ¼ş¼Ğ->ÊäÈë/½øÈë¸ùÄ¿Â¼
-2.´ò¿ª¶à¸öÖÕ¶Ë
-ÓÒ¼üÖÕ¶Ë£¬´ò¿ª´°¿Ú
-3.¸øÎÄ¼ş¼Ğ·ÖÅäÈ¨ÏŞ
-½øÈëÉÏ²ãÄ¿Â¼->sudo chmod -R 777 ÎÄ¼ş¼ĞÃû
-4.´ò¿ªmac os TightVNC
+1.è¿›å…¥æ–‡ä»¶å¤¹
+Finder->å‰å¾€->æ–‡ä»¶å¤¹->è¾“å…¥/è¿›å…¥æ ¹ç›®å½•
+2.æ‰“å¼€å¤šä¸ªç»ˆç«¯
+å³é”®ç»ˆç«¯ï¼Œæ‰“å¼€çª—å£
+3.ç»™æ–‡ä»¶å¤¹åˆ†é…æƒé™
+è¿›å…¥ä¸Šå±‚ç›®å½•->sudo chmod -R 777 æ–‡ä»¶å¤¹å
+4.æ‰“å¼€mac os TightVNC
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -off -restart -agent -privs -all -allowAccessFor -allUsers
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -off -restart -agent -privs -all -allowAccessFor -allUsers -clientopts -setvncpw -vncpw myVncPassword
-5.²é¿´Ä³¸öÎÄ¼şÈ¨ÏŞµÄÃüÁî
-ls -l Òª²é¿´ÎÄ¼şµÄÎÄ¼şÃû
-6.Ğ¶ÔØJenkins
+5.æŸ¥çœ‹æŸä¸ªæ–‡ä»¶æƒé™çš„å‘½ä»¤
+ls -l è¦æŸ¥çœ‹æ–‡ä»¶çš„æ–‡ä»¶å
+6.å¸è½½Jenkins
 /Library/Application Support/Jenkins/Uninstall.command  
-7.²é¿´¸½¼ÓÊôĞÔ
-ls -l@ ÎÄ¼şÃû
-7.É¾³ı@
-sudo xattr -d ÊôĞÔÃû ÎÄ¼şÃû
-8.¸ü¸ÄÍêJenkinsÎÄ¼ş×éºÍÓÃ»§Ãûºó,ÖØĞÂÉèÖÃÈ¨ÏŞ
+7.æŸ¥çœ‹é™„åŠ å±æ€§
+ls -l@ æ–‡ä»¶å
+7.åˆ é™¤@
+sudo xattr -d å±æ€§å æ–‡ä»¶å
+8.æ›´æ”¹å®ŒJenkinsæ–‡ä»¶ç»„å’Œç”¨æˆ·åå,é‡æ–°è®¾ç½®æƒé™
 
 $ sudo chown -R hyz /Users/Shared/Jenkins
 $ sudo chown -R hyz /var/log/jenkins
 
-#ÖØÆôJenkins
+#é‡å¯Jenkins
 $ sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
-´ò¿ªlocalhost:8080¾ÍÄÜ³É¹¦ÁË
+æ‰“å¼€localhost:8080å°±èƒ½æˆåŠŸäº†
 9.
-ctrl +alt +shift+fÍÆ³ötightvncÈ«ÆÁ¡£
+ctrl +alt +shift+fæ¨å‡ºtightvncå…¨å±ã€‚
 10.Team id
 WBHCY56HJ5
-11.Ô¿³×´®Ğ´µ½´ò°üshÖĞ£¬Ç©Ãû¾Í²»»á³ö´íÁË
+11.é’¥åŒ™ä¸²å†™åˆ°æ‰“åŒ…shä¸­ï¼Œç­¾åå°±ä¸ä¼šå‡ºé”™äº†
 security set-keychain-settings -t 3600 -l ~/Library/Keychains/login.keychain-db
 security unlock-keychain -p "123456" ~/Library/Keychains/login.keychain-db
-Ô¿³×´®µÄÓÃµ½µÄÃØÔ¿ÉèÖÃ³ÉËùÓĞappÊ¹ÓÃ¡£
+é’¥åŒ™ä¸²çš„ç”¨åˆ°çš„ç§˜é’¥è®¾ç½®æˆæ‰€æœ‰appä½¿ç”¨ã€‚
 12.
-\cp -r -a aaa/* /bbb ³É¹¦£¬Ã»ÓĞÌáÊ¾°´Y¡¢´«µİÁËÄ¿Â¼ÊôĞÔ¡¢Ã»ÓĞÂÔ¹ıÄ¿Â¼¡£
--r µİ¹é´¦Àí \cpºöÂÔ»Ø´ğY
-13.ÉèÖÃpreferrence
+\cp -r -a aaa/* /bbb æˆåŠŸï¼Œæ²¡æœ‰æç¤ºæŒ‰Yã€ä¼ é€’äº†ç›®å½•å±æ€§ã€æ²¡æœ‰ç•¥è¿‡ç›®å½•ã€‚
+-r é€’å½’å¤„ç† \cpå¿½ç•¥å›ç­”Y
+13.è®¾ç½®preferrence
 public static string AndroidSdkRoot {
     get { return EditorPrefs.GetString("AndroidSdkRoot"); }
     set { EditorPrefs.SetString("AndroidSdkRoot", value); }
@@ -51,7 +51,16 @@ public static string AndroidSdkRoot {
     set { EditorPrefs.SetString("AndroidNdkRoot", value); }
   }
 }
-14.ÖØÃüÃû
+14.é‡å‘½å
 mv oldfilename newfilename
-15.ÈÕÆÚºÍ×Ö·û´®Æ´½Ó·½Ê½
+15.æ—¥æœŸå’Œå­—ç¬¦ä¸²æ‹¼æ¥æ–¹å¼
 echo 123$(date +%Y_%m_%d_%H_%M_%S)
+
+15.Macè™šæ‹Ÿæœºå®‰è£…vmtoolsä¸æˆåŠŸ
+    https://www.jianshu.com/p/d7d4d7ba95a3
+    Win+R è¿›å…¥Mac OSè¿›å…¥æ¢å¤æ¨¡å¼ï¼ˆRecoveryï¼‰
+    å®ç”¨å·¥å…·/ç»ˆç«¯
+    csrutil disable å›è½¦
+    æ‰§è¡ŒæˆåŠŸåï¼Œè¿”å›ä¿¡æ¯å¦‚ä¸‹ï¼š
+    Successfully disabled System Integrity Protection. Please restart the machine for the changes to take effect.
+    é‡å¯ï¼Œé‡æ–°å®‰è£…VMToolå³å¯ã€‚
